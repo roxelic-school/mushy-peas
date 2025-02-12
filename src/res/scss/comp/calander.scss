@@ -1,0 +1,50 @@
+.calander {
+    margin: 2rem;
+
+    max-width: 300px;
+
+
+    border-radius: var(--radius);
+    border: var(--border);    
+
+    border-radius: var(--radius);
+    border-image: var(--border-gradient);
+
+    hr {
+        width: 90%;
+        margin: auto;
+        padding: 0;
+    }
+
+    .days {
+        display: grid;
+        grid-template-columns: 14% 14% 14% 14% 14% 14% 14%;
+        padding: 1vh;
+        
+        * {
+            border-radius: 5px;
+            border: 1px solid none;
+            text-align: center;
+            margin: 0;
+        }
+    }
+
+    #calander {
+        padding: 1vh;
+        display: grid;
+        grid-template-columns: 14% 14% 14% 14% 14% 14% 14%;
+    
+         * {
+            border-radius: 5px;
+            border: 1px solid var(--main);
+            text-align: center;
+            margin: 0;
+        }
+        *:hover {
+            border-radius: 5px;
+            border: 1px solid var(--main2);
+            text-align: center;
+            margin: 0;
+        }
+    }
+}

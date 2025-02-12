@@ -1,0 +1,43 @@
+@media (max-width: 768px) {
+    .headerbox {
+        width: 95vw;
+        height: auto;
+
+        margin: auto auto;
+
+        text-align: center;
+
+        background-color: var(--main);
+
+        border-bottom: var(--border);
+        border-right: var(--border);        
+
+        border-radius: var(--radius);
+        border-image: var(--border-gradient);
+
+        .urls {
+            width: 100%;
+
+            display: flex;
+
+            justify-content: space-evenly;
+            text-align: center;
+        }
+
+    }
+
+    .grid {
+        margin: 0;
+        padding: 0;
+
+        display: grid;
+        display: grid;
+        grid-template-columns: 10% 20% 70%;
+        padding: 10px;
+
+        * {
+            text-align: left;
+            margin: 0;
+        }
+    }
+}

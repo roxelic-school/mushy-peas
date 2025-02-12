@@ -1,0 +1,13 @@
+@media (min-width: 768px) {
+    @keyframes default-in {
+        0% {
+            opacity: 0;
+            top: -75px;
+        }
+        70% {top: 20px;}
+        80% {opacity: 1;}
+        100% {
+            top: 0px;
+        }
+    }
+}

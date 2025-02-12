@@ -1,0 +1,18 @@
+@media (prefers-color-scheme: light) {
+    :root{
+        // text
+        --global_text_color: white;
+        --font: "Pixelify Sans", sans-serif;
+
+        // colors
+        --main: white;
+        --main2: white;
+        --alt: white;
+        --passive: white;
+        --shadow: white;
+        
+        // background
+        --wallpaper: url('');
+        --background-color: rgb(255, 255, 255);
+    }
+}

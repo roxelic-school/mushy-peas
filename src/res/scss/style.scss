@@ -1,0 +1,46 @@
+@use 'size/mobile';
+@use 'size/desktop';
+
+@use 'colors/dark';
+@use 'colors/light';
+
+@use 'animations/desktop_anims';
+@use 'animations/mobile_anims';
+
+@use 'comp/calander';
+
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+
+// variables
+:root{
+    --radius: 12px;
+
+    --transition: all ease-in-out 0.3s;
+    --animation-default: default-in 0.6s ease-in-out;
+
+    --border: 3px solid black;
+    --border-gradient: linear-gradient(to right top, red, blue, yellow) 1;
+}
+
+html {
+    // background customisation
+    background-color: var(--background-color);
+    background-image: var(--wallpaper);
+    background-position: center;
+    background-size: contain;
+}
+
+html * {
+    // text customisation
+    color: var(--global_text_color);
+    
+        // font
+        font-family: var(--font);
+        font-optical-sizing: auto;
+        font-weight: 10;
+        font-style: normal;
+
+        // transitions \ animations
+        transition: var(--transition);
+        animation: var(--animation-default);
+}
