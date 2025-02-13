@@ -1,0 +1,25 @@
+.input {
+    position: relative;
+    margin: 2rem;
+
+    max-width: 300px;
+    min-width: 250px;
+
+    border-radius: var(--radius);
+    border: 3px solid salmon;
+    border-image: linear-gradient(to top, red, black) 1;
+
+    background-color: var(--alt);
+
+    input {
+        color: black;
+    }
+
+    hr {
+        width: 90%;
+        margin: auto;
+        padding: 0;
+        grid-column: span 3;
+    }
+
+}

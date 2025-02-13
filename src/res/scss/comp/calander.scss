@@ -1,14 +1,15 @@
 .calander {
+    position: relative;
+
     margin: 2rem;
 
     max-width: 300px;
 
-
     border-radius: var(--radius);
-    border: var(--border);    
+    border: 3px solid salmon;
+    border-image: linear-gradient(to right top, red, black) 1;
 
-    border-radius: var(--radius);
-    border-image: var(--border-gradient);
+    background-color: var(--alt);
 
     hr {
         width: 90%;
@@ -25,7 +26,7 @@
             border-radius: 5px;
             border: 1px solid none;
             text-align: center;
-            margin: 0;
+            margin: 1vh;
         }
     }
 
@@ -43,6 +44,7 @@
         *:hover {
             border-radius: 5px;
             border: 1px solid var(--main2);
+            background-color: var(--main2);
             text-align: center;
             margin: 0;
         }

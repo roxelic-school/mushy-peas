@@ -1,0 +1,29 @@
+---
+import Layout from '../layouts/astro/main.astro';
+---
+<Layout desc='pod booking site' title='calander'>
+    <script src="../res/js/cal"/>
+    <div class="main" id="main">
+        <div class="menu">
+            <div><p>search</p></div>
+            <div>
+                <p>date(american)
+                    <input type="text" id="date" name="date" style="color: black;">
+                </p>
+            </div>
+            <div>
+                <p>person
+                    <input type="text" id="name" name="name" style="color: black;">
+                </p>
+            </div>
+            <div>
+                <p>submit
+                    <button id="search">search</button>
+                </p>
+            </div>
+        </div>
+        <div class="hub" id="hub">
+
+        </div>
+    </div>
+</Layout>

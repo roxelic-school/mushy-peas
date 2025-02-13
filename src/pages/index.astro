@@ -1,7 +1,14 @@
 ---
 import Layout from '../layouts/astro/main.astro';
 import Calander from '../comp/calander.astro';
+import Slot from '../comp/slot.astro';
+import Input from '../comp/input.astro';
 ---
 <Layout desc='pod booking site' title='home'>
-    <Calander/>
+    <script src="../res/js/script"/>
+    <div class="main">
+        <Calander/>
+        <Input/>
+        <Slot/>
+    </div>
 </Layout>

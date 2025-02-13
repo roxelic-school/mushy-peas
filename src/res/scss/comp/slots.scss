@@ -1,0 +1,36 @@
+.slots {
+    position: relative;
+    margin: 2rem;
+
+    max-width: 300px;
+    min-width: 250px;
+
+    border-radius: var(--radius);
+    border: 3px solid salmon;
+    border-image: linear-gradient(to left top, red, black) 1;
+
+    background-color: var(--alt);
+
+    display: grid;
+    grid-template-columns: 50% 40%;
+
+    hr {
+        width: 90%;
+        margin: auto;
+        padding: 0;
+        grid-column: span 3;
+    }
+
+    input {
+        position: relative;
+        top: 25%;
+    }
+
+    .toggle {
+        text-align: end;
+    }
+
+    .slot-label {
+        text-align: center;
+    }
+}

@@ -39,4 +39,59 @@
             margin: 0;
         }
     }
+
+    .hub {
+        margin-top: 1vh;
+        position: relative;
+        width: 80vw;
+        border-radius: var(--radius);
+        border: 3px solid salmon;
+        border-image: linear-gradient(to right top, red, black) 1;
+
+        display: grid;
+        grid-template-columns: 30% 10% 10% 10% 10% 10% 10% 10%;
+
+        hr {
+            grid-column: span 8;
+            width: 90%;
+        }
+        
+        * {
+            height: max-content;
+
+            p {
+                margin: 0;
+                padding: 1vw;
+            }
+
+            :hover {
+                background-color: var(--alt);
+            }
+        }
+    }
+
+    .menu {
+        margin: 1vh;
+        position: relative;
+        width: 80vw;
+        border-radius: var(--radius);
+        border: 3px solid salmon;
+        border-image: linear-gradient(to right top, red, black) 1;
+
+        display: grid;
+        grid-template-columns: 30% 25% 25% 20%;
+
+        * {
+            text-align: center;
+
+            p {
+                margin: 0;
+                padding: 1vw;
+            }
+
+            :hover {
+                background-color: var(--alt);
+            }
+        }
+    }
 }

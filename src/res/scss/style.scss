@@ -8,6 +8,8 @@
 @use 'animations/mobile_anims';
 
 @use 'comp/calander';
+@use 'comp/slots';
+@use 'comp/input';
 
 @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
 
@@ -43,4 +45,10 @@ html * {
         // transitions \ animations
         transition: var(--transition);
         animation: var(--animation-default);
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
