@@ -1,0 +1,70 @@
+// the global box, this will fix issues that kept being caused by how i would make the same thing over and over
+.global-box {
+    position: relative;
+
+    border-radius: var(--border-radius);
+    border: 3px solid var(--main-color);
+    margin: 2rem;
+
+    max-width: 300px;
+
+    background-color: var(--alt);
+
+    hr {
+        width: 90%;
+        margin: auto;
+        padding: 0;
+    }
+
+}
+
+// calander from original redition -- modified
+.calander {
+    .days {
+        display: grid;
+        padding: 1vh;
+        
+        grid-template-columns: 14% 14% 14% 14% 14% 14% 14%;
+        
+        * {
+            border-radius: 5px;
+            border: 1px solid none;
+            
+            margin: 1vh;
+            
+            text-align: center;
+        }
+    }
+
+    #calander {
+        display: grid;
+        padding: 1vh;
+
+        grid-template-columns: 14% 14% 14% 14% 14% 14% 14%;
+    
+         * {
+            border-radius: 5px;
+            border: 1px solid var(--main-color);
+            margin: 0;
+      
+            text-align: center;      
+        }
+        *:hover {
+            border: 1px solid var(--main-alt-color);
+            margin: 0;
+
+            background-color: var(--alt-color);
+
+            color: var(--heavy-font-color);
+            text-align: center;
+        }
+    }
+
+    #calander-left:hover, #calander-right:hover {
+        border-radius: 5px;
+        background-color: var(--alt-color);
+
+        color: var(--heavy-font-color);
+        text-align: center;
+    }
+}

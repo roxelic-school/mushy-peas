@@ -1,0 +1,42 @@
+// animations
+@use 'animations/main';
+
+// colors
+@use 'color/dark';
+@use 'color/light';
+
+// sizes
+@use 'size/desktop';
+@use 'size/mobile';
+
+// extras
+@use 'global';
+
+// global variables
+:root {
+    //border
+    --border-radius: 13px;
+}
+
+html {
+    // background
+    background-color: var(--background-color);
+    background-image: var(--background-image);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    // font
+    font-family: var(--font-family);
+    font-weight: var(--font-weight);
+    font-style: var(--font-style);
+    color: var(--font-color);
+
+    * {
+        transition: var(--transition);
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: var(--heading-font);
+}
