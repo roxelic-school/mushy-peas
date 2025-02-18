@@ -1,0 +1,100 @@
+---
+import Layout from '../layouts/astro/main.astro'
+---
+<Layout title='admin' desc='The interactive admin page'>
+    <div class="main" id="admin_main">
+        <div class="pgViewSubjectHeader">
+            <h1>
+                admin
+            </h1>
+        </div>
+        <div class="pgViewSubject" style="display: block;">
+            <p style="color: red;">
+                If youre seeing this then i can only assume you are a techer
+                in which case you can understand the effects that come with each one of these options.
+                Please make edits sparingly.
+                <br>
+                If you are not a teacher please remeber backups of this data are made sparingly and all ip actions can be trased
+
+                <h3 style="color: red;">restore button</h3>
+                <p style="text-align: start; margin-left: 5vw;">This is more of a <code>ctrl + z</code> than anything, it will undo your last action</p>
+                <button id="restore_button" style="display: flex; margin-left: 2.5vw;">restore</button>
+            </p>
+            <h2 id="result" />
+            <hr>
+            <!--
+                You will use this to delete a date found on the calander page
+            -->
+            <h2>
+                Delete date
+            </h2>
+            <p>
+                What day would you like to delete? <b style="color: red;">american dates</b> <input type="text" id="Delete_date_text">
+            </p>
+            <button id="Delete_date_button">Delete</button>
+            <hr>
+            <!--
+                you use this to remove a unessisary slot
+            -->
+            <h2>
+                Delete_slot
+            </h2>
+            <p>
+                What is the day of the slot you would like to delete? <b style="color: red;">american dates</b><input type="text" id="Delete_slot_date_text"><br>
+                What is the slot that would you like to delete 0-6 <input type="number" id="Delete_slot_index_text" min="0" max="6"><br>
+                <button id="Delete_slot_button">delete</button>
+            </p>
+            <hr>
+            <!--
+                you can use this to force the content of a slot to be exactly what you need
+            -->
+            <h2>
+                force slot
+            </h2>
+            <p>
+                People:
+                <div style="justify-content: space-between; display:flex;">
+                    <div id="removeRow" style="display: inline; position: relative;">-</div>
+                    <div id="spawnRow" style="display: inline; position: relative;">+</div>
+                </div>
+                <div id="rows">
+                    <input>
+                </div><br>
+                reason<br>
+                <textarea id="Force_slot_reason"></textarea><br>
+                What is the day of the slot you would like to force? <b style="color: red;">american dates</b><input type="text" id="Force_slot_date_text"><br>
+                What is the slot that would you like to force 0-6 <input type="number" id="Force_slot_index_text" min="0" max="6"><br>
+                <button id="Force_slot_button">force</button>
+            </p>
+            <hr>
+            <!--
+                this one will reset the full application so please use this sparingly
+            -->
+            <h2>
+                reset
+            </h2>
+            <p style="color: red;">
+                Are you 100% sure you would like to do this? It is irriversable.<br><br>
+                <button id="Reset_button">delete all data</button>
+            </p>
+            <hr>
+            <!--
+                This allows you to view and edit the tokens that are being used by other admins
+            -->
+            <h2>
+                tokens
+            </h2>
+            <h3>view admin tokens</h3>
+            <p>
+                <button id="list_all_tokens_button">list all tokens</button>
+                <p id="Token_list"/>
+            </p>
+            <h3>remove token</h3>
+            <p>
+                Token to remove<br>
+                <input type="text" id="Token_remove_text"><br>
+                <button id="Token_remove_button">Remove token</button>
+            </p>
+        </div>
+    </div> 
+</Layout>

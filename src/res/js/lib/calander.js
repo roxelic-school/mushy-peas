@@ -3,7 +3,7 @@ export async function search() {
     params.append("person", document.getElementById("person").value);
     params.append("date", document.getElementById("day").value);
 
-    let url = `http://localhost:3000/api/v1/view?${params.toString()}`
+    let url = `/api/v1/view?${params.toString()}`
 
     try {
         let response = await fetch(url);
@@ -56,7 +56,6 @@ function buildresult(data, key){
 
             let names = document.createElement("div");
             names.textContent = item[0][0].join(", ");
-            console.log(item[0]);
 
             let reason = document.createElement("div");
             reason.textContent = item[0][1];

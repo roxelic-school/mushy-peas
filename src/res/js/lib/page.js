@@ -31,7 +31,7 @@ export function changeView(selected, element){
 
 export async function fetchVisit() {
     try {
-        let result = await fetch('http://localhost:3000/api/v1');
+        let result = await fetch('/api/v1');
         let data = await result.json();
         let visit = document.getElementById("visit-count")
         visit.innerHTML += data.hi;
@@ -108,7 +108,7 @@ export async function submit() {
     }
 
     try {
-        const response = await fetch("http://localhost:3000/api/v1/request", {
+        const response = await fetch("/api/v1/request", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"

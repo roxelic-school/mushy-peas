@@ -6,7 +6,10 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "clear": "rm -R ../peapod/frontends/",
+    "share": "mv ./dist/* ../peapod/frontends/",
+    "dist": "npm run build; npm run clear; mkdir ../peapod/frontends/; npm run share"
   },
   "dependencies": {
     "astro": "^5.3.0"
