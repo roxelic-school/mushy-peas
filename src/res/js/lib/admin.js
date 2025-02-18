@@ -118,3 +118,17 @@ async function postData(data){
         console.error("Error:", error);
     }
 }
+
+export async function genAdminLink() {
+    let admin_link = document.getElementById("admin_link");
+
+    try {
+        let response = await fetch("/api/v1/admin/gen");
+        let data = await response.json();
+
+        admin_link.textContent = data.newURL;
+        admin_link.href = data.newURL;
+    } catch (e) {
+        console.log(e);
+    }
+}

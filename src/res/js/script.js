@@ -1,6 +1,6 @@
 import { changeView, spawnNameRow, removeLastRow, submit, fetchVisit } from './lib/page.js';
 import { search } from './lib/calander.js';
-import { adminCheck, delete_date, delete_slot, force_slot, reset, restore, view_admin_tokens, remove_token } from './lib/admin.js';
+import { adminCheck, delete_date, delete_slot, force_slot, reset, restore, view_admin_tokens, remove_token, genAdminLink } from './lib/admin.js';
 
 // build the website, execute
 console.log("executing");
@@ -56,6 +56,7 @@ async function  build(params) {
                 document.getElementById("restore_button").addEventListener("click", restore);
                 document.getElementById("list_all_tokens_button").addEventListener("click", view_admin_tokens);
                 document.getElementById("Token_remove_button").addEventListener("click", remove_token);
+                document.getElementById("gen_admin_button").addEventListener("click", genAdminLink);
 
             } else {
                 document.getElementById("admin_main").innerHTML = "this resource is unavailable to you";
