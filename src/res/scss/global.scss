@@ -3,10 +3,7 @@
     position: relative;
 
     border-radius: var(--border-radius);
-    border: 3px solid var(--main-color);
     margin: 2rem;
-
-    max-width: 300px;
 
     background-color: var(--alt);
 
@@ -16,10 +13,16 @@
         padding: 0;
     }
 
+    * {
+        text-align: center !important;
+    }
+
 }
 
 // calander from original redition -- modified
 .calander {
+    margin: auto;
+    
     .days {
         display: grid;
         padding: 1vh;
@@ -32,7 +35,6 @@
             
             margin: 1vh;
             
-            text-align: center;
         }
     }
 
@@ -67,4 +69,38 @@
         color: var(--heavy-font-color);
         text-align: center;
     }
+}
+
+.header {
+    display: grid;
+    position: fixed;
+    top: 0;
+
+    opacity: 0.9;
+    backdrop-filter: blur(10px);
+
+    padding: calc(var(--border-radius) - 5px);
+
+    border-radius: 0 0 var(--border-radius) var(--border-radius);
+
+    z-index: 1;
+
+    background-color: var(--header-main-color);
+
+    width: 100vw;
+}
+
+.slot-wrapper{
+    display: grid;
+    width: 100%;
+
+    grid-template-columns: 50% 50%;
+}
+
+.slot-wrapper *{
+    height: fit-content;
+    min-height: 20px;
+
+    margin: auto auto;
+    top: 50%;
 }

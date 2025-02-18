@@ -16,6 +16,9 @@
 :root {
     //border
     --border-radius: 13px;
+
+    // transition
+    --transition: all ease-in-out 0.3s;
 }
 
 html {
@@ -37,6 +40,68 @@ html {
     }
 }
 
+html, body {
+    //default values
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    padding-bottom: 20vh;
+}
+
 h1, h2, h3, h4, h5, h6 {
     color: var(--heading-font);
+
+    text-align: start !important;
+    margin: 2.5vw;
+}
+
+button, input, textarea {
+    border-radius: var(--border-radius);
+
+    background-color: var(--background-color);
+
+    border: 3px solid var(--tri-color);
+    color: var(--font-color);
+
+    // font
+    font-family: var(--font-family);
+    font-weight: var(--font-weight);
+    font-style: var(--font-style);
+    color: var(--font-color);
+}
+
+//scroll
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+::-webkit-scrollbar-thumb {
+    border-radius: 13px;
+    background: var(--alt-color);
+}
+::-webkit-scrollbar-thumb:hover {
+    background: var(--alt-color);
+}
+
+//link
+:link{
+    color: var(--font-link-color);
+}
+a:hover{
+    color: var(--font-link-color);
+    --underline-width: 100%;
+}
+a {
+    background: linear-gradient(currentColor 0 0) bottom center/ var(--underline-width, 90%) 0.1em no-repeat;
+    color: var(--font-link-color);
+    text-decoration: none;
+    transition: background-size 0.5s;
+}
+::selection {
+    background: var(--font-link-color);
 }

@@ -7,6 +7,8 @@ interface Props {
 const { desc } = Astro.props;
 const { title } = Astro.props;
 
+import Header from '../comp/header.astro';
+
 import '../res/scss/style.scss'
 ---
 
@@ -24,9 +26,11 @@ import '../res/scss/style.scss'
 		<link href="https://fonts.googleapis.com/css2?family=Jersey+20&family=Pixelify+Sans&display=swap" rel="stylesheet">
 
 		<meta name="generator" content={Astro.generator} />
-		<title>{ title }</title>
+		<title>{ "UTC Media City - " + title }</title>
 	</head>
 	<body>
+		<Header />
 		<slot />
 	</body>
+	<script src="../res/js/script.js"/>
 </html>

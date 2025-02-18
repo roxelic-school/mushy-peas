@@ -1,0 +1,27 @@
+---
+import Layout from '../layouts/astro/main.astro'
+---
+<Layout title='calander' desc='In this page you can view the dates other people have chosen'>
+    <div class="main">
+        <div class="pgViewSubjectHeader">
+            <h1>
+                search
+            </h1>
+        </div>
+        <div class="pgViewSubject" style="display: block;">
+            <p style="color: red;">
+                This uses american dates
+            </p>
+            <hr style="width: 80%;">
+            <div style="justify-content: space-between;">
+                <p style="width: fit-content; display: inline;">day: <input type="text" id="day" style="width: 10vw; display: inline;"></p>
+                <p style="width: fit-content; display: inline;">person: <input type="text" id="person" style="width: 10vw; display: inline;"></p>
+                <button id="search">search</button>
+            </div>
+            <hr style="width: 80%;">
+            <div id="view-slots">
+                
+            </div>
+        </div>
+    </div>
+</Layout>

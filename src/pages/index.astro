@@ -2,7 +2,136 @@
 import Layout from '../layouts/astro/main.astro'
 import Calander from '../comp/calander.astro'
 ---
-<Layout title='test' desc='test'>
-    <p>hi</p>
-    <Calander/>
+<Layout title='request' desc='Using this page you can request slots'>
+    <div class="main">
+        <div class="pgViewSubjectHeader">
+            <div class="subject" id="subjectView1">
+                <p>
+                    1
+                </p>
+            </div>
+            <div class="subject" id="subjectView2">
+                <p>
+                    2
+                </p>
+            </div>
+            <div class="subject" id="subjectView3">
+                <p>
+                    3
+                </p>
+            </div>
+            <div class="subject" id="subjectView4">
+                <p>
+                    4
+                </p>
+            </div>
+        </div>
+        <div class="pgViewSubject" id="page1">
+            <h2>
+                Choose a date!
+            </h2>
+            <p style="text-align: start;">
+                This will be the date that you will book your slots on, please remeber that choosing a weekend
+                will result in an invalid request and will obviously be denied. Unlike holiday bookings which will go through
+                but unless given special permisions and circumstances from a teacher will be obviously unavailable and
+                booking them may or may not result in some form of punishment.
+            </p>
+            <hr>
+            <Calander/>
+            <hr>
+            <p>
+                please note, that if anything inapropriate is submitted then it may or may not be responded to by a figure of authority.<br>
+                thank you for considering this information
+            </p>
+        </div>
+        <div class="pgViewSubject" id="page2">
+            <h1>
+                people!
+            </h1>
+            <p style="text-align: start;">
+                Please add the names of every person who will be in your study pod. if you fail to name anyone it will
+                result in punishment of appropriate messure.
+            </p>
+            <h3>
+                Please use their exact school given username, capitalisation is not required.
+            </h3>
+            <div style="justify-content: space-between; display:flex;">
+                <div id="removeRow" style="display: inline; position: relative;">-</div>
+                <div id="spawnRow" style="display: inline; position: relative;">+</div>
+            </div>
+            <div id="rows">
+                <input>
+            </div>
+            <p style="color: red;">
+                Please make sure no spelling errors have been made, grammer erros or extra symbols or punctuation has been inputted that are unessisary
+            </p>
+        </div>
+        <div class="pgViewSubject" id="page3">
+            <h1>
+                reason
+            </h1>
+            <p style="text-align: start;">
+                what is the reason for your use of the pods?
+            </p>
+            <textarea id="reason"/>
+            <p>
+                please remeber that this will be what decides if your slot stays or not
+            </p>
+        </div>
+        <div class="pgViewSubject" id="page4">
+            <h1>
+                slot
+            </h1>
+            <p>
+                This will be the time slot which you can use the pod in,
+                The amount of hours you can use a pod each week is 3 unless given special permision.
+            </p>
+            <hr>
+            <div class="slot-wrapper">
+                <p>slot1 -- 9am/10am</p>
+                <input type="checkbox" id="slot-1">
+            </div>
+            <hr>
+            <div class="slot-wrapper">
+                <p>slot2 -- 10am/11am</p>
+                <input type="checkbox" id="slot-2">
+            </div>
+            <hr>
+            <div class="slot-wrapper">
+                <p>slot3 -- 11am/12pm</p>
+                <input type="checkbox" id="slot-3">
+            </div>
+            <hr>
+            <div class="slot-wrapper">
+                <p>slot4 -- 12pm/1pm</p>
+                <input type="checkbox" id="slot-4">
+            </div>
+            <hr>
+            <div class="slot-wrapper">
+                <p>slot5 -- 1pm/2pm</p>
+                <input type="checkbox" id="slot-5">
+            </div>
+            <hr>
+            <div class="slot-wrapper">
+                <p>slot6 -- 2pm/3pm</p>
+                <input type="checkbox" id="slot-6">
+            </div>
+            <hr>
+            <div class="slot-wrapper">
+                <p>slot7 -- 3pm/4pm</p>
+                <input type="checkbox" id="slot-7">
+            </div>
+
+            <hr>
+            <h1>
+                Submit
+            </h1>
+            <p style="color: red;" id="warning">
+                Once submitted this data cannot be changed, are you sure?
+            </p>
+            <button id="submit">
+                submit
+            </button>
+        </div>
+    </div>
 </Layout>
