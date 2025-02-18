@@ -1,6 +1,6 @@
 export async function adminCheck() {
     try {
-        let response = await fetch('http://localhost:3000/api/v1/admin/check');
+        let response = await fetch('/api/v1/admin/check');
         let data = await response.json();
 
         return data.status;
