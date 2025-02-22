@@ -5,5 +5,12 @@ import Layout from '../full.astro';
 ---
 
 <Layout desc={frontmatter.desc} title={frontmatter.title}>
-    <slot />
+    <div class="main">
+        <div class="pgViewSubjectHeader">
+            <h2>{frontmatter.title}</h2>
+        </div>
+        <div class="pgViewSubject" style="display: block; text-align: start;">
+            <slot />
+        </div>
+    </div>
 </Layout>
