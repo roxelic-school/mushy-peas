@@ -87,7 +87,8 @@ function loadDays(currentday){
     days.forEach(item => {
         let newel = document.createElement("P");
         newel.textContent = item[0];
-        newel.id = `${item[1]}/${item[0]}/${item[2]}`;
+        newel.id = `${item[0]}/${item[1]}/${item[2]}`;
+        console.log(newel.id);
         newel.addEventListener("click", ChangeSelectedDay);
         calander.appendChild(newel);
     });

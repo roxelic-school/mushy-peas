@@ -1,0 +1,23 @@
+---
+import Layout from '../layouts/astro/main.astro'
+---
+<Layout title='qr' desc='the qr codes for this website'>
+    <div class="main">
+        <div class="pgViewSubjectHeader">
+            <h1>
+                qr
+            </h1>
+        </div>
+        <div class="pgViewSubject" style="display: block;">
+            <p>
+                In order to use the pod booking website you will need to join the wifi and then go to the local ip
+            </p>
+            <div class="qr-hold">
+                <img src="/api/v1/qr/wifi">
+                <img src="/api/v1/qr/website">
+                <p>wifi</p>
+                <p>website</p>
+            </div>
+        </div>
+    </div>
+</Layout>

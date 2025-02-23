@@ -76,6 +76,16 @@ button, input, textarea {
     color: var(--font-color);
 }
 
+.qr-hold{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    justify-content: center;
+
+    img {
+        margin: auto;
+    }
+}
+
 //scroll
 ::-webkit-scrollbar {
     width: 5px;
